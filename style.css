@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    /* background: rgb(13,19,94);
+    background: radial-gradient(circle, rgba(13,19,94,1) 37%, rgba(13,18,36,1) 100%); */
+    background: rgb(122,46,46);
+    background: radial-gradient(circle, rgba(122,46,46,1) 53%, rgba(52,0,0,1) 100%);
+}
+
+.navbar {
+    background: transparent !important;
+    color: whitesmoke !important;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50dvh;
+}
+
+.introduction-text {
+    font-size: clamp(.1rem, 1.5rem, 2rem);
+    background-color: #272727;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.introduction-btn {
+    color: azure;
+    border: 1px solid;
+}
+
+hr {
+    height: 5px;
+    border-radius: 3px;
+    background: rgb(255,255,255);
+    background: linear-gradient(77deg, rgba(255,255,255,1) 0%, rgba(94,13,74,1) 12%, rgba(13,18,36,1) 100%);
+}
+
+.btn-featured {
+    color: #272727;
+    border-color: #272727;
+}
+
+.explore {
+    border: 1px solid #cb0000;
+    color: #cb0000;
+}
+.card  img {
+    width: 100%;
+    height: 25dvh;
+}
+
+.card {
+    transition: all 200ms ease-in-out;
+}
+.card-body,.card-header {
+    transition: all 300ms ease-out;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: .7rem;
+}
+
+footer a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+.card:hover {
+    transform: scale(1.02);
+    /* border: 1px solid #272727; */
+    -webkit-box-shadow: -1px 2px 5px 3px rgba(0,0,0,0.24);
+    -moz-box-shadow: -1px 2px 5px 3px rgba(0,0,0,0.24);
+    box-shadow: -1px 2px 5px 3px rgba(0,0,0,0.24);
+
+    .explore:hover {
+        background-color: #cb0000;
+        color: aliceblue;
+    }
+    .card-body,.card-header {
+        color: aliceblue;
+        background-color: #272727;
+        border-radius: 5px;
+    }
+    .btn-featured {
+        color: aliceblue;
+        border-color: aliceblue
+    }
+    .btn-featured:hover {
+        color: black;
+        background-color: aliceblue
+    }
+
+}
